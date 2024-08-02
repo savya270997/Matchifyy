@@ -228,6 +228,7 @@ button:disabled {
 
 .table-wrapper {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
 }
 
 .fl-table {
@@ -238,41 +239,23 @@ button:disabled {
 
 .fl-table th,
 .fl-table td {
-  /* border: 1px solid #ddd;*/
   padding: 12px;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
-  .fl-table th,
-  .fl-table td {
-    padding: 8px;
-    font-size: 14px;
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .table-container {
+    max-width: inherit;
+    overflow-x: scroll;
+  }
+  @media (max-width: 768px) {
+    .table-container {
+      max-width: inherit;
+      overflow-x: scroll;
+    }
   }
 }
-
-@media screen and (max-width: 480px) {
-  .table_card {
-    padding: 10px;
-  }
-
-  .fl-table {
-    font-size: 14px;
-  }
-
-  .fl-table th,
-  .fl-table td {
-    padding: 6px;
-  }
-
-  .fl-table th {
-    font-size: 12px;
-  }
-
-  .fl-table td {
-    font-size: 12px;
-  }
-}
-
 .fl-table th {
   background-color: #1868ae;
   color: #ffffff;

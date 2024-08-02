@@ -250,7 +250,11 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .cards-container {
-    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+  }
+  .about-little {
+    display: none;
   }
 
   .card {
@@ -290,7 +294,13 @@
   .dashboard-header {
     padding: 10px;
   }
-
+  .cards-container {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-little {
+    display: none;
+  }
   .app-icon {
     width: 40px;
     height: 40px;
