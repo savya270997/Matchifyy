@@ -1,7 +1,7 @@
 @import "../variables.css";
 
 .login-container {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 40px;
@@ -73,4 +73,9 @@ button[type="submit"],
 
 .margin-right {
   margin-right: 10px;
+}
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 100%;
+  }
 }
