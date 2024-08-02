@@ -1,0 +1,76 @@
+@import "../variables.css";
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 40px;
+  text-align: center;
+  background-color: var(--color-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  box-shadow: -2px 14px 15px #00000029;
+  margin-top: 5%;
+}
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  margin-bottom: 15px;
+}
+.brand-logo img {
+  height: 90px;
+  width: 90px;
+}
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.form-group,
+.field {
+  margin-bottom: 15px;
+}
+
+.form-group label,
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.form-group input,
+.field input {
+  width: 100%;
+  padding: var(--padding);
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+.button_reg {
+  background-color: var(--color-basic);
+  color: white;
+  border: none;
+}
+
+.register-button {
+  background-color: var(--color-basic);
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.grid--50-50 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.margin-right {
+  margin-right: 10px;
+}

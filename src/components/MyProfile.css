@@ -1,0 +1,92 @@
+.profile-container {
+  width: 600px;
+
+  margin: 5% auto;
+  padding: 20px;
+  background-color: var(--color-tertiary);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  text-align: left;
+  color: var(--color-primary);
+}
+
+.profile-fields {
+  margin-top: 20px;
+}
+
+.profile-field {
+  margin-bottom: 15px;
+}
+
+.profile-field label {
+  display: block;
+  color: var(--color-primary);
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.profile-field input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  font-size: 18px;
+}
+
+/* .edit-button,
+.save-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button i {
+  margin-right: 5px;
+}
+
+.edit-button:hover,
+.save-button:hover {
+  background: var(--color-secondary);
+}
+*/
+.gridiy {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.small-tn {
+  height: 40px;
+  width: 80px;
+}
+@media (max-width: 480px) {
+  .gridiy {
+    display: block;
+  }
+  .profile-container {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .gridiy {
+    display: block;
+  }
+  .profile-container {
+    width: 70%;
+  }
+}
+.hideit {
+  display: none;
+}

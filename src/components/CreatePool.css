@@ -1,0 +1,83 @@
+@import "../variables.css";
+
+.create-pool-container {
+  padding: 20px;
+}
+
+.SaveEdit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.create-pool-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.form-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: var(--color-primary);
+}
+.form-section h4 {
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+/*.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}*/
+
+.input-icon {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.date-group {
+  display: flex;
+  gap: 10px;
+}
+
+.date-group input {
+  width: 60px;
+  text-align: center;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper input {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .create-pool-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CreatePool.css */
+
+.date-picker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
