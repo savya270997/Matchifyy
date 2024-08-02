@@ -11,6 +11,7 @@ import MyProfile from "./components/MyProfile";
 import { PoolProvider } from "./components/PoolContext";
 import { AuthProvider } from "./context/AuthContext"; // Import AuthProvider
 import Background from "./components/Background";
+import AboutUs from "./components/About Us";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
                 path="/pool-detail-view/:poolId"
                 element={<PoolDetailView />}
               />
+              <Route path="/about-us" element={<AboutUs />} />
             </Routes>
           </Background>
         </Router>

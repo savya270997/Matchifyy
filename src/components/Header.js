@@ -24,6 +24,10 @@ const Header = () => {
     navigate("/my-profile");
   };
 
+  const handleAboutUsClick = () => {
+    navigate("/about-us");
+  };
+
   const handleTitleClick = () => {
     navigate("/dashboard");
   };
@@ -64,6 +68,9 @@ const Header = () => {
       <nav className="header-right">
         <a href onClick={handleMyActivitiesClick}>
           My Activities
+        </a>
+        <a href onClick={handleAboutUsClick}>
+          About us
         </a>
         <div className="user-menu" onClick={toggleDropdown}>
           <i className="fa fa-user-circle user-icon"></i>

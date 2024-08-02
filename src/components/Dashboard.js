@@ -87,6 +87,17 @@ const Dashboard = () => {
       <div className="dashboard-container">
         <main className="dashboard-main">
           <div className="cards-container">
+            <div className="about-little right-align">
+              <h2>Create pool</h2>
+              <p>
+                helps you to set up a new pool for a game and let other players
+                seek you.
+              </p>
+            </div>
+            <div className="about-little left-align">
+              <h2>Join pool</h2>
+              <p>helps you to participate in an existing pool for a game. </p>
+            </div>
             <div className="card" onClick={handleCreatePoolClick}>
               <FaPlusCircle className="card-icon" />
               <h1>Create Pool</h1>

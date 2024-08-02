@@ -64,13 +64,36 @@
 
 /* Cards container */
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.about-little {
+  min-width: 200px;
+  max-width: 220px;
+}
+.about-little p {
+  font-size: 22px;
+  color: #fff;
+}
+.about-little h2 {
+  color: var(--color-basic);
+  margin: 0;
+  padding: 0px 0px 6px 0px;
+  font-size: 51px;
+  line-height: 44px;
 
+  font-weight: bold;
+}
+.left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
 .card {
   padding: 10px;
   border-radius: var(--border-radius);

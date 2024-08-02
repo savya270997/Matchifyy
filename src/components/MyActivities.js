@@ -239,7 +239,7 @@ const MyActivities = () => {
           </div>
           <div className="tabs-content">
             {activeTab === "created" && (
-              <div>
+              <div className="overflow">
                 <h1>Created Pool</h1>
                 <table className="fl-table ">
                   <thead>
