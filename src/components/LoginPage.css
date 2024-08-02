@@ -76,6 +76,6 @@ button[type="submit"],
 }
 @media (max-width: 480px) {
   .login-container {
-    max-width: 100%;
+    max-width: 75%;
   }
 }
