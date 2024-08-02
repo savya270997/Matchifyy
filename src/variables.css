@@ -242,6 +242,36 @@ button:disabled {
   padding: 12px;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .fl-table th,
+  .fl-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table_card {
+    padding: 10px;
+  }
+
+  .fl-table {
+    font-size: 14px;
+  }
+
+  .fl-table th,
+  .fl-table td {
+    padding: 6px;
+  }
+
+  .fl-table th {
+    font-size: 12px;
+  }
+
+  .fl-table td {
+    font-size: 12px;
+  }
+}
 
 .fl-table th {
   background-color: #1868ae;
