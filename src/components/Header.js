@@ -62,14 +62,14 @@ const Header = () => {
         </div>
       </div>
       <nav className="header-right">
-        <a href="#" onClick={handleMyActivitiesClick}>
+        <a href onClick={handleMyActivitiesClick}>
           My Activities
         </a>
         <div className="user-menu" onClick={toggleDropdown}>
           <i className="fa fa-user-circle user-icon"></i>
           {dropdownOpen && (
             <div className="dropdown-menu">
-              <a href="#" onClick={handleProfileClick}>
+              <a href onClick={handleProfileClick}>
                 My Profile
               </a>
               <button onClick={handleLogout}>Logout</button>

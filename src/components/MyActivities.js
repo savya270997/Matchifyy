@@ -72,7 +72,6 @@ const MyActivities = () => {
 
   const handleViewClick = (pool) => {
     navigate(`/pool-detail-view/${pool.id}`, { state: { pool } });
-    console.log(pool.id, pool);
   };
 
   const handleLeaveClick = (poolId) => {

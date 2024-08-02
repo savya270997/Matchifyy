@@ -134,7 +134,6 @@ const CreatePool = () => {
     const loggedInUserEmail = currentUser.email;
 
     //const loggedInUserEmail = localStorage.getItem("email");
-    //console.log("Logged-in user email:", loggedInUserEmail);
 
     // Create pool object
     const newPool = {
@@ -150,7 +149,6 @@ const CreatePool = () => {
     try {
       // Save to Firestore
       await addDoc(collection(db, "pools"), newPool);
-      console.log("Pool added with ID:", newId, newPool);
 
       alert("Pool created successfully!");
 

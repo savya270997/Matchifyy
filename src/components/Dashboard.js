@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FaPlusCircle, FaUsers } from "react-icons/fa";
 import Header from "./Header";
 import { db } from "../firebaseconfig"; // Import your Firebase config
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 
 const Dashboard = () => {
   const [showTable, setShowTable] = useState(false);

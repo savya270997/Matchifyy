@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { db } from "../firebaseconfig";
 import {
   collection,
-  addDoc,
   query,
   where,
   getDocs,
@@ -42,15 +41,8 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (isRegistering) {
-      const {
-        username,
-        password,
-        confirmPassword,
-        phoneNumber,
-        email,
-        name,
-        locality,
-      } = formData;
+      const { username, password, confirmPassword, phoneNumber, email } =
+        formData;
 
       if (password !== confirmPassword) {
         alert("Passwords do not match");
@@ -151,7 +143,7 @@ const LoginPage = () => {
 
           // Store user data in session storage
           sessionStorage.setItem("currentUser", JSON.stringify(userData));
-          console.log(userData);
+
           navigate("/dashboard");
         } catch (error) {
           alert("Error during registration: " + error.message);
