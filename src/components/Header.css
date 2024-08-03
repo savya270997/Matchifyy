@@ -126,36 +126,6 @@
   color: #fff;
 }
 
-@media (max-width: 480px) {
-  .header-center {
-    display: none;
-  }
-  .app-title {
-    font-size: 14px;
-  }
-
-  .search-bar {
-    display: none;
-  }
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .header-right {
-    flex-direction: row;
-  }
-
-  .header-right a {
-    margin-right: 10px;
-  }
-
-  .user-menu {
-    margin-bottom: 0px;
-  }
-}
-
 .text-anime {
   text-transform: uppercase;
   background-image: linear-gradient(
@@ -180,5 +150,78 @@
 @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-center {
+    display: none;
+  }
+
+  .app-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+  }
+
+  .header-right {
+    margin-top: 10px;
+  }
+
+  .header-right a {
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .user-icon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-title {
+    font-size: 18px;
+  }
+
+  .header-left {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .header-right a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input[type="text"] {
+    font-size: 14px;
   }
 }
