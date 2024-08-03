@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./MyProfile.css";
-import Header from "./Header";
+import Header from "../Header/index";
 import { doc, updateDoc } from "firebase/firestore";
-import { db } from "../firebaseconfig";
+import { db } from "../../Firebase/firebaseconfig";
 
 const MyProfile = () => {
   const [isEditing, setIsEditing] = useState(false);

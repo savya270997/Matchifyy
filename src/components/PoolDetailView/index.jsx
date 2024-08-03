@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./PoolDetailView.css";
-import Header from "./Header";
-import { db } from "../firebaseconfig"; // Ensure this is the correct path to your Firebase configuration
+import Header from "../Header/index";
+import { db } from "../../Firebase/firebaseconfig"; // Ensure this is the correct path to your Firebase configuration
 import {
   doc,
   getDoc,

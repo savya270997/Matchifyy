@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import Dashboard from "./components/Dashboard";
 import CreatePool from "./components/CreatePool";
-import MyActivities from "./components/MyActivities";
+import MyActivities from "./components/MyActivity";
 import PoolDetailView from "./components/PoolDetailView";
 import JoinPool from "./components/JoinPool";
 import MyProfile from "./components/MyProfile";
-import { PoolProvider } from "./components/PoolContext";
+import { PoolProvider } from "./context/PoolContext";
 import { AuthProvider } from "./context/AuthContext"; // Import AuthProvider
 import Background from "./components/Background";
-import AboutUs from "./components/About Us";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   return (
