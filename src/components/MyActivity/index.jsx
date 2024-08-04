@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./MyActivities.css";
-import Header from "./Header";
+import Header from "../Header";
 import { useNavigate } from "react-router-dom";
-import ConfirmationModal from "./ConfirmationModal";
-import { db } from "../firebaseconfig";
+import ConfirmationModal from "../ConfirmationModal";
+import { db } from "../../Firebase/firebaseconfig";
 import {
   collection,
   query,

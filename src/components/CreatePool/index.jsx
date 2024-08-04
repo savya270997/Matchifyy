@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CreatePool.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaUser, FaEnvelope } from "react-icons/fa";
-import Header from "./Header";
+import Header from "../Header";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {
@@ -11,7 +11,7 @@ import {
   MdGridOn,
   MdLibraryAddCheck,
 } from "react-icons/md";
-import { db } from "../firebaseconfig";
+import { db } from "../../Firebase/firebaseconfig";
 import { collection, addDoc } from "firebase/firestore";
 
 const CreatePool = () => {

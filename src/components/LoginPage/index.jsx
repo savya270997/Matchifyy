@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { db } from "../firebaseconfig";
+import { db } from "../../Firebase/firebaseconfig";
 import {
   collection,
   query,
@@ -9,9 +9,10 @@ import {
   doc,
   setDoc,
 } from "firebase/firestore";
-import OTPVerification from "./OTPVerification";
+import OTPVerification from "../OTPVerification";
 import "./LoginPage.css";
 import "../variables.css";
+import LoginPageLogo from "../images/Cricket_logo.png";
 
 const LoginPage = () => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -157,7 +158,7 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="brand-logo">
-        <img src="../Cricket_logo.png" alt="Cricket Logo" />
+        <img src={LoginPageLogo} alt="Cricket Logo" />
       </div>
       <h2 className="brand-title">
         {isRegistering ? "Register" : "MatchiFY! Login"}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import Header from "./Header";
+import Header from "../Header";
 import myimage from "../images/finish-1.png";
 import fullsport from "../images/Full-sport.png";
 import unite from "../images/unite.png";

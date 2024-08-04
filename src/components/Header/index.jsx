@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import logo from "../Cricket_logo.png";
+import logo from "../images/Cricket_logo.png";
 import React, { useState, useEffect } from "react";
 
 const Header = () => {

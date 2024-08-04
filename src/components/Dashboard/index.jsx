@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
 import { useNavigate } from "react-router-dom";
 import { FaPlusCircle, FaUsers } from "react-icons/fa";
-import Header from "./Header";
-import { db } from "../firebaseconfig"; // Import your Firebase config
+import Header from "../Header";
+import { db } from "../../Firebase/firebaseconfig"; // Import your Firebase config
 import { collection, query, getDocs } from "firebase/firestore";
 
 const Dashboard = () => {

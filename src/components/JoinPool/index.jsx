@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./JoinPool.css";
-import Header from "./Header";
-import OTPModal from "./OTPModal";
+import Header from "../Header/index";
+import OTPModal from "../OTPModal";
 import { MdOutlineStadium, MdGridOn, MdLibraryAddCheck } from "react-icons/md";
 import { FaMapMarkerAlt, FaPhoneAlt, FaQuestionCircle } from "react-icons/fa";
-import { db } from "../firebaseconfig"; // Import your Firebase config
+import { db } from "../../Firebase/firebaseconfig"; // Import your Firebase config
 import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 const JoinPool = () => {
