@@ -48,7 +48,6 @@ const MyActivities = () => {
         id: doc.id,
         ...doc.data(),
       }));
-      setActivities(createdPools);
 
       // Fetch joined pools
       const joinedQuery = query(
@@ -60,11 +59,30 @@ const MyActivities = () => {
         id: doc.id,
         ...doc.data(),
       }));
+
+      // Combine both created and joined pools for deletion check
+      const allPools = [...createdPools, ...joinedPools];
+      await checkAndDeleteExpiredPools(allPools);
+
+      setActivities(createdPools);
       setJoinedActivities(joinedPools);
     };
 
     fetchActivities();
   }, []);
+
+  const checkAndDeleteExpiredPools = async (pools) => {
+    const now = new Date();
+
+    for (const pool of pools) {
+      const poolEndTime = new Date(`${pool.date} ${pool.time}`);
+      if (poolEndTime < now) {
+        const poolDocRef = doc(db, "pools", pool.id);
+        await deleteDoc(poolDocRef);
+        console.log(`Deleted expired pool with ID: ${pool.id}`);
+      }
+    }
+  };
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
