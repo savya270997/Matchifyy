@@ -13,17 +13,19 @@
   margin-top: 5%;
 }
 .brand-logo {
-  height: 100px;
-  width: 100px;
+  width: 205px;
+  height: 205px;
+
   margin: auto;
+  background-color: var(--color-basic);
   border-radius: 50%;
   box-sizing: border-box;
   box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
   margin-bottom: 15px;
 }
 .brand-logo img {
-  height: 90px;
-  width: 90px;
+  width: 190px;
+  height: 190px;
 }
 .brand-title {
   margin-top: 10px;

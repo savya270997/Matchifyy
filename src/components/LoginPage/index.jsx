@@ -12,7 +12,7 @@ import {
 import OTPVerification from "../OTPVerification";
 import "./LoginPage.css";
 import "../variables.css";
-import LoginPageLogo from "../images/Cricket_logo.png";
+import LoginPageLogo from "../images/logo-vertical.png";
 
 const LoginPage = () => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -160,9 +160,7 @@ const LoginPage = () => {
       <div className="brand-logo">
         <img src={LoginPageLogo} alt="Cricket Logo" />
       </div>
-      <h2 className="brand-title">
-        {isRegistering ? "Register" : "MatchiFY! Login"}
-      </h2>
+      <h2 className="brand-title">{isRegistering ? "Register" : ""}</h2>
       {isVerifyingOTP ? (
         <OTPVerification
           otp={otp}

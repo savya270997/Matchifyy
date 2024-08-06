@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import logo from "../images/Cricket_logo.png";
+import logo from "../images/logo-horizontal.png";
 import React, { useState, useEffect } from "react";
 
 const Header = () => {
@@ -57,7 +57,6 @@ const Header = () => {
           style={{ cursor: "pointer" }}
         >
           <img className="logo" src={logo} alt="logo" />
-          MatchiFY!
         </h1>
       </div>
       <div className="header-center">
