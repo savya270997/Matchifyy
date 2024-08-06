@@ -12,7 +12,7 @@ import {
 import OTPVerification from "../OTPVerification";
 import "./LoginPage.css";
 import "../variables.css";
-import LoginPageLogo from "../images/logo-vertical.png";
+import LoginPageLogo from "../images/logo-white-vertical.png";
 
 const LoginPage = () => {
   const [isRegistering, setIsRegistering] = useState(false);
