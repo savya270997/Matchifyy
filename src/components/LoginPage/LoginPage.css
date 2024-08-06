@@ -12,19 +12,19 @@
   box-shadow: -2px 14px 15px #00000029;
   margin-top: 5%;
 }
-.brand-logo {
+/*.brand-logo {
   width: 205px;
   height: 205px;
 
   margin: auto;
-  background-color: var(--color-basic);
+  background-color: #fff;
   border-radius: 50%;
   box-sizing: border-box;
   box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
   margin-bottom: 15px;
-}
+}*/
 .brand-logo img {
-  width: 190px;
+  width: 250px;
   height: 190px;
 }
 .brand-title {
